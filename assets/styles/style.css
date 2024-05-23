@@ -1,0 +1,79 @@
+@import url(bootstrap.css);
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&family=Reddit+Mono:wght@200..900&display=swap');
+
+body{
+    font-family: "Reddit Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* ///// Header Section Start ///// */
+
+.bubbly-fonts {
+    font-family: "Lilita One", monospace;
+    font-size: 16px;
+}
+.container-fluid {
+    padding: 0 60px;
+}
+nav{
+    background-color: #fff;
+    border-top: 10px solid var(--bs-success);
+}
+:before{
+    content: '';
+    width: 100%;
+    height: 20px;
+    z-index: -1;
+    position: absolute;
+    background-color: #fff;
+    -webkit-mask: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1920 20'><path d='M-1.74846e-06 0.000173574L0 20.0002C40 20.0002 40 0.000164355 80.01 0.000160857C120.01 0.00015736 120.01 20.0002 160.02 20.0002C200.02 20.0002 200.02 0.000150365 240.02 0.000146869C280.02 0.000143372 280.02 20.0001 320.02 20.0001C360.02 20.0001 360.02 0.000136378 400.02 0.000132881C440.02 0.000129384 440.02 20.0001 480.02 20.0001C520.02 20.0001 520.02 0.00012239 560.02 0.000118893C600.02 0.000115396 600.02 20.0001 640.02 20.0001C680.02 20.0001 680.02 0.000108402 720.02 0.000104906C760.02 0.000101409 760.02 20.0001 800.02 20.0001C840.02 20.0001 840.02 9.44148e-05 880.02 9.09179e-05C920.02 8.7421e-05 920.02 20.0001 960.01 20.0001C1000.01 20.0001 1000.01 8.04281e-05 1040.01 7.69312e-05C1080.01 7.34343e-05 1080.01 20.0001 1120.01 20.0001C1160.01 20.0001 1160.01 6.64404e-05 1200.01 6.29435e-05C1240.01 5.94466e-05 1240.01 20.0001 1280.01 20.0001C1320.01 20.0001 1320.01 5.24528e-05 1360.01 4.89559e-05C1400.01 4.5459e-05 1400.01 20 1440.01 20C1480.01 20 1480.01 3.84651e-05 1520.01 3.49682e-05C1560.01 3.14713e-05 1560.01 20 1600.01 20C1640.01 20 1640.01 2.44775e-05 1680.01 2.09806e-05C1720 1.74846e-05 1720 20 1760 20C1800 20 1800 1.04907e-05 1840 6.99382e-06C1880 3.49691e-06 1880 20 1920 20L1920 5.72205e-06L-1.74846e-06 0.000173574Z'/></svg>");
+    mask: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1920 20'><path d='M-1.74846e-06 0.000173574L0 20.0002C40 20.0002 40 0.000164355 80.01 0.000160857C120.01 0.00015736 120.01 20.0002 160.02 20.0002C200.02 20.0002 200.02 0.000150365 240.02 0.000146869C280.02 0.000143372 280.02 20.0001 320.02 20.0001C360.02 20.0001 360.02 0.000136378 400.02 0.000132881C440.02 0.000129384 440.02 20.0001 480.02 20.0001C520.02 20.0001 520.02 0.00012239 560.02 0.000118893C600.02 0.000115396 600.02 20.0001 640.02 20.0001C680.02 20.0001 680.02 0.000108402 720.02 0.000104906C760.02 0.000101409 760.02 20.0001 800.02 20.0001C840.02 20.0001 840.02 9.44148e-05 880.02 9.09179e-05C920.02 8.7421e-05 920.02 20.0001 960.01 20.0001C1000.01 20.0001 1000.01 8.04281e-05 1040.01 7.69312e-05C1080.01 7.34343e-05 1080.01 20.0001 1120.01 20.0001C1160.01 20.0001 1160.01 6.64404e-05 1200.01 6.29435e-05C1240.01 5.94466e-05 1240.01 20.0001 1280.01 20.0001C1320.01 20.0001 1320.01 5.24528e-05 1360.01 4.89559e-05C1400.01 4.5459e-05 1400.01 20 1440.01 20C1480.01 20 1480.01 3.84651e-05 1520.01 3.49682e-05C1560.01 3.14713e-05 1560.01 20 1600.01 20C1640.01 20 1640.01 2.44775e-05 1680.01 2.09806e-05C1720 1.74846e-05 1720 20 1760 20C1800 20 1800 1.04907e-05 1840 6.99382e-06C1880 3.49691e-06 1880 20 1920 20L1920 5.72205e-06L-1.74846e-06 0.000173574Z'/></svg>");
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-position: center center;
+    mask-position: center center;
+    -webkit-mask-size: cover;
+    mask-size: cover;
+}
+.navbar-brand{
+    background: url(/assets/images/logo.png) no-repeat #fff;
+    width: 185px;
+    height: 75px;
+    display: inline-block;
+    background-size: 100%;
+    background-position: -1px;
+    font-size: 0;
+}
+.navbar-nav li a {
+    text-transform: uppercase;
+    font-weight: 600;
+    color: var(--bs-info);
+}
+.navbar-nav li a.active {
+    color: var(--bs-secondary) !important;
+}
+.header-banner {
+    background: url(/assets/images/hero-banner-1.jpg) no-repeat;
+   -webkit-mask: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 300.000000 155.000000'%3E%3Cg transform='translate(0.000000,155.000000) scale(0.050000,-0.050000)'%3E%3Cpath d='M0 2202 l0 -898 107 -98 c336 -307 778 -396 1673 -338 1155 75 1402 22 2010 -438 720 -545 1436 -578 2085 -96 l125 93 0 1336 0 1337 -3000 0 -3000 0 0 -898z'/%3E%3C/g%3E%3C/svg%3E");
+    mask: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 300.000000 155.000000'%3E%3Cg transform='translate(0.000000,155.000000) scale(0.050000,-0.050000)'%3E%3Cpath d='M0 2202 l0 -898 107 -98 c336 -307 778 -396 1673 -338 1155 75 1402 22 2010 -438 720 -545 1436 -578 2085 -96 l125 93 0 1336 0 1337 -3000 0 -3000 0 0 -898z'/%3E%3C/g%3E%3C/svg%3E"); -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-position: right bottom;
+    mask-position: right bottom;
+    -webkit-mask-size: cover;
+    mask-size: cover;
+    width: 100%;
+    height: 900px;
+}
+
+/* ///// Header Section End ///// */
+
+
+/* ///// Footer Section Start ///// */
+footer{
+    background: url(/assets/images/shap-bg-2.png) var(--bs-dark);
+    width: 100%;
+    min-height: 300px;
+}
+/* ///// Footer Section End ///// */
