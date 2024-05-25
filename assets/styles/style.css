@@ -38,7 +38,11 @@ body {
 .container-fluid {
   padding: 0 60px;
 }
-
+.navbar-toggler{
+  border: none !important;
+  font-size: 45px;
+    color: #e94727;
+}
 nav {
   background-color: #fff;
   border-top: 10px solid var(--bs-success);
