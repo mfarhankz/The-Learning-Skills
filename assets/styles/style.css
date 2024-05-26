@@ -96,6 +96,27 @@ header .navbar-nav li .btn {
   color: var(--bs-info);;
 }
 
+.offcanvas {
+  background-color: black;
+  opacity: 0.8;
+}
+.offcanvas-title{
+  color: white !important;;
+}
+
+.offcanvas .btn-close {
+  background-color: transparent !important;
+  border: none !important; 
+  opacity: 1 !important;
+}
+
+.offcanvas .btn-close::before {
+  content: '\00d7';
+  color: #c43f23 !important; 
+  font-size: 2rem;
+  display: inline-block;
+  line-height: 1;
+}
 .offcanvas .navbar-nav li a.active {
   color: var(--bs-primary) !important;
 }
@@ -1697,6 +1718,19 @@ footer:before {
     margin-left: 0px;
     left: -49px;
 }
+  .offcanvas .navbar-nav li{
+    margin: 5px 0 !important;
+  }
+
+  
+  header .navbar-nav li .btn {
+    padding: 10px 40px !important;
+    color: #fff;
+  }
+  
+  header .navbar-nav li a.active {
+    color: var(--bs-secondary) !important;
+  }
 }
 
 @media screen and (min-width: 500px) and (max-width: 767px) {
@@ -1768,14 +1802,38 @@ footer:before {
   .donate-page-footer {
     margin-top: 150px !important;
   }
-}
-
-@media screen and (min-width: 250px) and (max-width: 499px) {
+  .offcanvas .navbar-nav li{
+    margin: 10px 0 !important;
+  }
+  .offcanvas .navbar-nav li{
+    margin: 5px 0 !important;
+  }
   header .navbar-nav li a {
-    color: var(--bs-info);
+    color: #fff !important;
   }
   
   header .navbar-nav li .btn {
+    margin-top: 30px;
+    padding: 10px 40px !important;
+    color: #fff;
+  }
+  
+  header .navbar-nav li a.active {
+    color: var(--bs-secondary) !important;
+  }
+}
+
+@media screen and (min-width: 250px) and (max-width: 499px) {
+  .offcanvas .navbar-nav li{
+    margin: 5px 0 !important;
+  }
+  header .navbar-nav li a {
+    color: #fff !important;
+  }
+  
+  header .navbar-nav li .btn {
+    margin-top: 30px;
+    padding: 10px 40px !important;
     color: #fff;
   }
   
@@ -2247,10 +2305,6 @@ footer:before {
 }
 
 /* Gallery end */
-.offcanvas {
-  backdrop-filter: blur(60px) !important; /* Increased blur value */
-  box-shadow: 0 0 30px rgba(227, 228, 237, 0.37) !important;
-  border: 2px solid rgba(255, 255, 255, 0.18) !important;
-  background-color: rgba(0, 0, 0, 0.5) !important; /* Adding a semi-transparent background for better visibility */
-  color: white !important;
-}
+
+
+
