@@ -1638,6 +1638,9 @@ footer:before {
   .testimonial-section .testimonial-area {
     padding: 0 100px !important;
   }
+  .testimonial-section .container-fluid{
+    padding: 0 !important;
+  }
 
   .baner-content h3 {
     font-size: 60px;
@@ -1668,6 +1671,10 @@ footer:before {
 @media screen and (min-width: 250px) and (max-width: 499px) {
   .container-fluid {
     padding: 0 10px;
+  }
+
+  .testimonial-section .container-fluid{
+    padding: 0 !important;
   }
 
   footer:before {
@@ -1789,7 +1796,7 @@ footer:before {
 
   .header-banner {
     height: 600px;
-    overflow-x: hidden !important;
+    overflow: hidden !important;
   }
 
   .img-section::after {
