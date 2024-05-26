@@ -2248,10 +2248,9 @@ footer:before {
 
 /* Gallery end */
 .offcanvas {
-  backdrop-filter: blur(30px) !important;
+  backdrop-filter: blur(60px) !important; /* Increased blur value */
   box-shadow: 0 0 30px rgba(227, 228, 237, 0.37) !important;
   border: 2px solid rgba(255, 255, 255, 0.18) !important;
-  background-color: transparent !important;
+  background-color: rgba(0, 0, 0, 0.5) !important; /* Adding a semi-transparent background for better visibility */
   color: white !important;
-  ;
 }
