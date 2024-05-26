@@ -86,12 +86,18 @@ nav:before {
 header .navbar-nav li a {
   text-transform: uppercase;
   font-weight: 600;
-  /* color: var(--bs-info); */
-  color: white;
+  color: var(--bs-info);
 }
 
 header .navbar-nav li .btn {
-  color: #fff;
+  color: #fff !important;
+}
+.offcanvas .navbar-nav li a {
+  color: var(--bs-info);;
+}
+
+.offcanvas .navbar-nav li a.active {
+  color: var(--bs-primary) !important;
 }
 
 header .navbar-nav li a.active {
@@ -1694,6 +1700,18 @@ footer:before {
 }
 
 @media screen and (min-width: 500px) and (max-width: 767px) {
+  header .navbar-nav li a {
+    color: var(--bs-info);
+  }
+  
+  header .navbar-nav li .btn {
+    color: #fff;
+  }
+  
+  header .navbar-nav li a.active {
+    color: var(--bs-secondary) !important;
+  }
+
   .banner-container {
     margin: 0 auto !important;
   }
@@ -1753,6 +1771,17 @@ footer:before {
 }
 
 @media screen and (min-width: 250px) and (max-width: 499px) {
+  header .navbar-nav li a {
+    color: var(--bs-info);
+  }
+  
+  header .navbar-nav li .btn {
+    color: #fff;
+  }
+  
+  header .navbar-nav li a.active {
+    color: var(--bs-secondary) !important;
+  }
   .container-fluid {
     padding: 0 10px;
   }
