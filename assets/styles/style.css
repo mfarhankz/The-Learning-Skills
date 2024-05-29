@@ -92,31 +92,36 @@ header .navbar-nav li a {
 header .navbar-nav li .btn {
   color: #fff !important;
 }
+
 .offcanvas .navbar-nav li a {
-  color: var(--bs-info);;
+  color: var(--bs-info);
+  ;
 }
 
 .offcanvas {
   background-color: black;
   opacity: 0.8;
 }
-.offcanvas-title{
-  color: white !important;;
+
+.offcanvas-title {
+  color: white !important;
+  ;
 }
 
 .offcanvas .btn-close {
   background-color: transparent !important;
-  border: none !important; 
+  border: none !important;
   opacity: 1 !important;
 }
 
 .offcanvas .btn-close::before {
   content: '\00d7';
-  color: #c43f23 !important; 
+  color: #c43f23 !important;
   font-size: 2rem;
   display: inline-block;
   line-height: 1;
 }
+
 .offcanvas .navbar-nav li a.active {
   color: var(--bs-primary) !important;
 }
@@ -591,14 +596,31 @@ header .navbar-nav li a.active {
   color: #fff;
   transition: all 300ms ease;
   overflow: hidden;
-  display: inline-block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   text-align: center;
   border-radius: 24px;
   border: none !important;
+  text-decoration: none;
+
 }
 
 .program-card-one:hover .program-card-btn {
   background-color: white;
+}
+
+.program-card-btn i {
+  color: white;
+  font-size: 26px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.program-card-one:hover .program-card-btn i {
+  color: #000 !important;
 }
 
 .red-color {
@@ -1631,12 +1653,13 @@ footer:before {
   .banner-container {
     margin: 0 auto !important;
   }
+
   .mail-bg {
     mask-size: cover !important;
     width: 135%;
     margin-left: 0px;
     left: -150px;
-}
+  }
 
   .mail-one {
     overflow: hidden !important;
@@ -1712,22 +1735,24 @@ footer:before {
   .mail-content {
     margin-left: 170px;
   }
+
   .mail-bg {
     mask-size: cover !important;
     width: 115%;
     margin-left: 0px;
     left: -49px;
-}
-  .offcanvas .navbar-nav li{
+  }
+
+  .offcanvas .navbar-nav li {
     margin: 5px 0 !important;
   }
 
-  
+
   header .navbar-nav li .btn {
     padding: 10px 40px !important;
     color: #fff;
   }
-  
+
   header .navbar-nav li a.active {
     color: var(--bs-secondary) !important;
   }
@@ -1737,11 +1762,11 @@ footer:before {
   header .navbar-nav li a {
     color: var(--bs-info);
   }
-  
+
   header .navbar-nav li .btn {
     color: #fff;
   }
-  
+
   header .navbar-nav li a.active {
     color: var(--bs-secondary) !important;
   }
@@ -1802,44 +1827,49 @@ footer:before {
   .donate-page-footer {
     margin-top: 150px !important;
   }
-  .offcanvas .navbar-nav li{
+
+  .offcanvas .navbar-nav li {
     margin: 10px 0 !important;
   }
-  .offcanvas .navbar-nav li{
+
+  .offcanvas .navbar-nav li {
     margin: 5px 0 !important;
   }
+
   header .navbar-nav li a {
     color: #fff !important;
   }
-  
+
   header .navbar-nav li .btn {
     margin-top: 30px;
     padding: 10px 40px !important;
     color: #fff;
   }
-  
+
   header .navbar-nav li a.active {
     color: var(--bs-secondary) !important;
   }
 }
 
 @media screen and (min-width: 250px) and (max-width: 499px) {
-  .offcanvas .navbar-nav li{
+  .offcanvas .navbar-nav li {
     margin: 5px 0 !important;
   }
+
   header .navbar-nav li a {
     color: #fff !important;
   }
-  
+
   header .navbar-nav li .btn {
     margin-top: 30px;
     padding: 10px 40px !important;
     color: #fff;
   }
-  
+
   header .navbar-nav li a.active {
     color: var(--bs-secondary) !important;
   }
+
   .container-fluid {
     padding: 0 10px;
   }
@@ -1993,6 +2023,7 @@ footer:before {
   .mail-content {
     margin-left: 83px;
   }
+
   .donate-page-footer {
     margin-top: 0 !important;
   }
@@ -2305,6 +2336,3 @@ footer:before {
 }
 
 /* Gallery end */
-
-
-
